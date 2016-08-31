@@ -1,0 +1,36 @@
+{
+  "name": "medium-editor-embed-button",
+  "description": "oEmbed support for medium-editor",
+  "main": "build",
+  "authors": [
+    "Orhan Firik < orhanfirik@gamil.com >"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "medium-editor",
+    "oembed",
+    "embed"
+  ],
+  "homepage": "https://github.com/orhanveli/medium-editor-embed-button",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "medium-editor": "^5.21.1"
+  },
+  "version": "1.2.0",
+  "_release": "1.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.2.0",
+    "commit": "32a373206c8f5d58976f24f6c8af1091ba01b4f4"
+  },
+  "_source": "https://github.com/orhanveli/medium-editor-embed-button.git",
+  "_target": "^1.2.0",
+  "_originalSource": "medium-editor-embed-button",
+  "_direct": true
+}
