@@ -7,7 +7,6 @@ var gulp = require("gulp"),
     useref = require("gulp-useref"),
     uglify = require("gulp-uglify"),
     cssnano = require("gulp-cssnano"),
-    gulpIf = require("gulp-if"),
     rename = require("gulp-rename"),
     sourcemaps = require("gulp-sourcemaps"),
     runSequence = require("run-sequence"),
@@ -48,7 +47,7 @@ function userefTask(){
 }
 
 function watchTask(){
-    gulp.watch("src/scss/**/*.scss", ["sass"]);
+    gulp.watch(["src/scss/**/*.scss", "src/js/**/*.js", "src/sample/**/*"], ["dist"]);
 }
 
 function webserverTask(){
@@ -69,6 +68,6 @@ gulp.task("useref", ["sass"], userefTask);
 gulp.task("watch", watchTask);
 gulp.task("serve", webserverTask);
 
-gulp.task("dist", ["useref"], function(){
+gulp.task("dist", function(){
     runSequence("useref", "min");
 });

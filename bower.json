@@ -16,6 +16,6 @@
     "tests"
   ],
   "dependencies": {
-    "medium-editor-embed-button": "^1.2.0"
+    "medium-editor-embed-button": "^1.3.0"
   }
 }
